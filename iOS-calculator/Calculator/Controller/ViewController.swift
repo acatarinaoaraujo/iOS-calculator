@@ -34,13 +34,19 @@ class ViewController: UIViewController {
         
         calculator.setNumber(displayValue)
         
+        
         if let calcMethod = sender.currentTitle {
  
             if let result = calculator.calculate(symbol: calcMethod) {
                 displayValue = result
             }
         }
+        
+        sender.shortChangeTo(sender.backgroundColor?.withAlphaComponent(0.80) ?? .gray)
+
     }
+    
+
 
     
     @IBAction func numButtonPressed(_ sender: UIButton) {
@@ -65,6 +71,14 @@ class ViewController: UIViewController {
             }
         }
     }
-
 }
 
+extension UIButton {
+  func shortChangeTo(_ color:UIColor) {
+    let prev = self.backgroundColor
+    self.backgroundColor = color
+    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+       self.backgroundColor = prev
+    }
+  }
+}
