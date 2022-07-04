@@ -40,9 +40,8 @@ class ViewController: UIViewController {
             if let result = calculator.calculate(symbol: calcMethod) {
                 displayValue = result
             }
+            sender.shortChangeTo(sender.backgroundColor?.withAlphaComponent(0.80) ?? .gray)
         }
-        
-        sender.shortChangeTo(sender.backgroundColor?.withAlphaComponent(0.80) ?? .gray)
 
     }
     
@@ -69,6 +68,7 @@ class ViewController: UIViewController {
                 }
                 calculatonLabel.text = calculatonLabel.text! + numValue
             }
+            sender.shortChangeTo(sender.backgroundColor?.withAlphaComponent(0.80) ?? .gray)
         }
     }
 }
