@@ -45,8 +45,6 @@ class ViewController: UIViewController {
 
     }
     
-
-
     
     @IBAction func numButtonPressed(_ sender: UIButton) {
         
@@ -69,6 +67,7 @@ class ViewController: UIViewController {
                 calculatonLabel.text = calculatonLabel.text! + numValue
             }
             sender.shortChangeTo(sender.backgroundColor?.withAlphaComponent(0.80) ?? .gray)
+            
         }
     }
 }
@@ -81,4 +80,48 @@ extension UIButton {
        self.backgroundColor = prev
     }
   }
+}
+
+/*extension UIButton{
+    func roundedButton(){
+        let maskPath1 = UIBezierPath(roundedRect: bounds,
+                                     byRoundingCorners: [.topLeft , .topRight , .bottomLeft, .bottomRight],
+            cornerRadii: CGSize(width: 8, height: 8))
+        let maskLayer1 = CAShapeLayer()
+        maskLayer1.frame = bounds
+        maskLayer1.path = maskPath1.cgPath
+        layer.mask = maskLayer1
+    }
+}*/
+
+@IBDesignable extension UIButton {
+
+    @IBInspectable var borderWidth: CGFloat {
+        set {
+            layer.borderWidth = newValue
+        }
+        get {
+            return layer.borderWidth
+        }
+    }
+
+    @IBInspectable var cornerRadius: CGFloat {
+        set {
+            layer.cornerRadius = newValue
+        }
+        get {
+            return layer.cornerRadius
+        }
+    }
+
+    @IBInspectable var borderColor: UIColor? {
+        set {
+            guard let uiColor = newValue else { return }
+            layer.borderColor = uiColor.cgColor
+        }
+        get {
+            guard let color = layer.borderColor else { return nil }
+            return UIColor(cgColor: color)
+        }
+    }
 }
