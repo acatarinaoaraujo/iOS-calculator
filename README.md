@@ -1,4 +1,4 @@
-# iOS Calculator App (https://developer.apple.com/swift/images/swift-og.png)
+# iOS Calculator App ![alt text](https://developer.apple.com/swift/images/swift-og.png)
 This application is a basic calculator for iOS devices which used Swift programming language and Xcode. This app was mainly created to get experience auto layering, handling buttons, and basic calculations. 
 
 ## How to use
