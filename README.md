@@ -11,4 +11,4 @@ This application is a basic calculator for iOS devices which used Swift programm
   git clone https://github.com/acatarinaoaraujo/iOS-calculator.git
   ```
  ## Contact
- In case you want to contribute to this app, send me an email at acoa_@hotmail.com. :bulb:
+ <em> In case you want to contribute to this app, send me an email at acoa_@hotmail.com.</em> :bulb:
