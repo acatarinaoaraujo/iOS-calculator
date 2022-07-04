@@ -290,7 +290,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="displayLabel" destination="DNs-Te-SYH" id="yPw-AA-KVx"/>
+                        <outlet property="calculatonLabel" destination="DNs-Te-SYH" id="yPw-AA-KVx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b3E-z2-QY8" sceneMemberID="firstResponder"/>
