@@ -2,8 +2,7 @@
 This application is a basic calculator for iOS devices which used Swift programming language and Xcode. This app was mainly created to get experience auto layering, handling buttons, and basic calculations. 
 
 ![](calculator.gif)
-![](landscape-calculator.png =250x250)
-<img src="landscape-calculator.png" width="200" height="400" />
+<img src="landscape-calculator.png" width="400" height="400" />
 
 ### How to use
 :small_orange_diamond: Download source code
