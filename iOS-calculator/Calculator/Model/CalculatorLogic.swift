@@ -27,6 +27,14 @@ struct CalculatorLogic {
                 return 0
             case "%":
                 return n * 0.01
+            case "sin":
+                return sin(n)
+            case "cos":
+                return cos(n)
+            case "tan":
+                return tan(n)
+            case "√":
+                return n.squareRoot()
             case "=":
                 return performTwoNumCalculation(n2: n)
             default:
