@@ -3,6 +3,7 @@ This application is a basic calculator for iOS devices which used Swift programm
 
 ![](calculator.gif)
 ![](landscape-calculator.png =250x250)
+<img src="landscape-calculator.png" width="200" height="400" />
 
 ### How to use
 :small_orange_diamond: Download source code
